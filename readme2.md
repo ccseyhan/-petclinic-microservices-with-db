@@ -2285,7 +2285,7 @@ kompose convert -f docker-compose.yml -o petclinic_chart/templates
       initContainers:
       - name: init-config-server
         image: busybox
-        command: ['sh', '-c', 'until nc -z config-server:8888; do echo waiting for config-server; sleep 2; done;']
+        command: ['sh', '-c', 'until nc -z config-server:8888; do echo waiting for config-server; sleep 2; done;']   #depends on 
 # for all other microservices except config-server, discovery-server and mysql-server
       initContainers:
       - name: init-discovery-server
