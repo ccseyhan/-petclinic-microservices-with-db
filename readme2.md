@@ -2253,7 +2253,7 @@ kompose version
 ```
 
 * Install Helm [version 3+](https://github.com/helm/helm/releases) on Jenkins Server. [Introduction to Helm](https://helm.sh/docs/intro/). [Helm Installation](https://helm.sh/docs/intro/install/).
-
+       ###############!!!!!!!!!!!!!!!!#############
 ```bash
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
 helm version
@@ -2638,7 +2638,7 @@ ansible-playbook --connection=local --inventory 127.0.0.1, --extra-vars "workspa
 - Run the following command to test the `dummy_selenium_test_headless.py` file.
 
 ```bash
-cd petclinic-microservices-with-db/
+cd petclinic-microservices-with-db/                            ##############!!!!!!!!!!!!###########
 ansible-playbook --connection=local --inventory 127.0.0.1, --extra-vars "workspace=$(pwd)" ./ansible/playbooks/pb_run_dummy_selenium_job.yaml
 ```
 - Next, you can change something in the `dummy_selenium_test_headless.py` (I'm Feeling Lucks) and run the command again. And check the test ``passed`` or ``failed``. 
